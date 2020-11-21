@@ -19,11 +19,6 @@ function greet(timeStr) {
  
 
 /* Write your implementation of displayMessage() */
-function displayMessage(TEST){
- let a= document.getElementById("greeting");
-  a.innerHTML="TEST";
-  return; 
+function displayMessage(msg) {
+  document.getElementById("greeting").innerText = msg;
 }
-addEventListener('click', greet);
-console.log(greet());
-addEventListener('click', displayMessage('TEST'));
